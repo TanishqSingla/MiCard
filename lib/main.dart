@@ -56,15 +56,23 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Card(
-                  color: Colors.white,
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.email,
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.deepOrange[800],
+                  ),
+                  title: Text(
+                    'tanishq@gmail.com',
+                    style: TextStyle(
                       color: Colors.deepOrange[800],
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
                     ),
-                  )),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
