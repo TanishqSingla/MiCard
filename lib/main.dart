@@ -10,11 +10,13 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.deepOrange[400],
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
                 backgroundImage: NetworkImage(
-                    'https://avatars2.githubusercontent.com/u/26207583?s=460&u=d99eb73bfb2fcd6eead3a4fc54e68919390cc273&v=4'),
+                  'https://avatars2.githubusercontent.com/u/26207583?s=460&u=d99eb73bfb2fcd6eead3a4fc54e68919390cc273&v=4',
+                ),
               ),
               Text(
                 'Tanishq Singla',
@@ -32,6 +34,13 @@ class MyApp extends StatelessWidget {
                     fontFamily: 'Source Sans Pro',
                     fontWeight: FontWeight.bold,
                     color: Colors.deepOrange[200]),
+              ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.deepOrange[100],
+                ),
               ),
               Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
